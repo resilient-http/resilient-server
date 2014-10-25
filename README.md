@@ -2,18 +2,25 @@
 
 Dummy HTTP server fully compatible with the [Resilient](http://resilient-http.github.io) [specfication](https://github.com/resilient-http/spec) discovery protocol for demo/development/testing proposals
 
+It also support CORS for direct browser consumition
+
 ## Installation
 
 You must have [node.js](http://nodejs.org) already installed
 
 Install the package
 ```bash
-npm install -g resilient-server
+$ npm install -g resilient-server
 ```
 
 Start the server
 ```bash
-resilient-server -p 8080 -h 0.0.0.0 --api-key awesome
+$ resilient-server -p 8080 -h 0.0.0.0 --api-key awesome
+```
+
+Show the help
+```bash
+$ resilient-server --help
 ```
 
 ## API
@@ -50,7 +57,7 @@ HTTP/1.1 404 Not Found
 
 Update the servers for the given application service
 
-**Note**: this service could require an API key token, if it's was defined
+**Note**: this service could require an API key token, if it's was defined via `--api-token` flag
 
 ##### Request
 
