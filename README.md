@@ -2,7 +2,7 @@
 
 Dummy HTTP server fully compatible with the [Resilient](http://resilient-http.github.io) [specfication](https://github.com/resilient-http/spec) discovery protocol for demo/development/testing proposals
 
-It also support CORS for direct browser consumition
+It also implements CORS for direct browser consumition
 
 ## Installation
 
