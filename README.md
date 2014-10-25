@@ -1,4 +1,4 @@
-# resilient-server
+# resilient-server [![Build Status](https://api.travis-ci.org/h2non/resilient-server.svg?branch=master)][travis] [![Dependency Status](https://gemnasium.com/h2non/resilient-server.svg)][gemnasium] [![NPM version](https://badge.fury.io/js/resilient-server.svg)][npm]
 
 Dummy HTTP server fully compatible with the [Resilient](http://resilient-http.github.io) [specfication](https://github.com/resilient-http/spec) discovery protocol for demo/development/testing proposals
 
@@ -141,3 +141,7 @@ forever -m 5 ./bin/resilient-server
 ## License
 
 MIT - Tomas Aparicio
+
+[travis]: http://travis-ci.org/h2non/resilient-server
+[gemnasium]: https://gemnasium.com/h2non/resilient-server
+[npm]: http://npmjs.org/package/resilient-server
