@@ -1,8 +1,12 @@
 # resilient-server [![Build Status](https://api.travis-ci.org/h2non/resilient-server.svg?branch=master)][travis] [![Dependency Status](https://gemnasium.com/h2non/resilient-server.svg)][gemnasium] [![NPM version](https://badge.fury.io/js/resilient-server.svg)][npm]
 
-Dummy HTTP server fully compatible with the [Resilient](http://resilient-http.github.io) [specfication](https://github.com/resilient-http/spec) discovery protocol for demo/development/testing proposals
+Dummy HTTP server fully compatible with the [Resilient](http://resilient-http.github.io) [specfication](https://github.com/resilient-http/spec) discovery protocol.
 
-It also implements CORS for direct browser consumition
+The stored servers are persisted as volatile data (in-memory). After a server restart is required data re-registering
+
+It was designed to be used for testing, demo and development proposals with resilient based applications.
+
+Additionally it implements full CORS support for direct browser consumption
 
 ## Installation
 
