@@ -1,0 +1,51 @@
+{
+  "name": "resilient-server",
+  "version": "0.1.0",
+  "description": "Dummy HTTP server for register discovery services according to the Resilient discovery protocol",
+  "license": "MIT",
+  "preferGlobal": true,
+  "engineStrict": true,
+  "repository": "https://github.com/h2non/resilient-server.git",
+  "main": "./lib",
+  "directories": {
+    "lib": "./lib"
+  },
+  "bin": {
+    "resilient-server": "./bin/resilient-server"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "start": "./bin/resilient-server",
+    "test": "grunt test"
+  },
+  "keywords": [
+    "resilient",
+    "reactive",
+    "server",
+    "discovery",
+    "balancer",
+    "balance",
+    "register",
+    "servers"
+  ],
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "restify": "^2.8.1",
+    "yargs": "^1.2.6"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "cucumber": "^0.4.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-mocha-cli": "^1.10.0",
+    "grunt-nar": "^0.4.0",
+    "grunt-shell-spawn": "^0.3.0",
+    "grunt-stubby": "^0.1.4",
+    "load-grunt-tasks": "^0.6.0",
+    "mocha": "^1.20.1",
+    "superagent": "^0.18.2"
+  }
+}

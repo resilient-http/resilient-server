@@ -1,0 +1,52 @@
+#!/usr/bin/env node
+
+var ResilientServer = require('../')
+
+var yargs = require('yargs')
+var argv = yargs
+  .usage('Start Resilient server.\nUsage: $0')
+  .example('$0 -h localhost -p 8080 --api-token awesome', '')
+  .describe('help', 'Show help')
+  .describe('version', 'Show the server version')
+  .alias('v', 'version')
+  .describe('host', 'Hostname to listen')
+  .alias('h', 'host')
+  .default('host', '0.0.0.0')
+  .describe('port', 'TCP port to listen')
+  .alias('p', 'port')
+  .default('port', 8080)
+  .describe('api-token', 'Require an API token for write operations')
+  .alias('k', 'api-token')
+  .describe('silent', 'Enable silent mode (no stdout logging)')
+  .argv
+
+if (argv.help) return echo(yargs.help())
+if (argv.version) return echo(server.VERSION)
+
+try {
+  startServer()
+} catch (err) {
+  onError(err)
+}
+
+function startServer() {
+  var server = ResilientServer.createServer(argv)
+  server.on('ready', function (config) {
+    echo('Resilient server is listening on port', config.port)
+  }).on('close', function () {
+    echo('Server was stopped')
+    process.exit(0)
+  })
+  server.on('error', onError)
+  server.start()
+}
+
+function onError(err) {
+  console.error('Error:', err.message || err)
+  if (err.stack) console.error(err.stack)
+  process.exit(1)
+}
+
+function echo() {
+  console.log.apply(console, arguments)
+}
