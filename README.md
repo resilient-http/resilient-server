@@ -27,7 +27,7 @@ Show the help
 $ resilient-server --help
 ```
 
-## API
+## HTTP API
 
 #### GET /:appName
 
@@ -44,6 +44,8 @@ curl -i http://localhost:8080/my-app-api
 Valid response
 ```json
 HTTP/1.1 200 OK
+Content-Type: application/json
+Server: resilient-server 0.1.0
 
 [
   "http://api1.server.me",
