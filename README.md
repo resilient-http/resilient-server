@@ -1,6 +1,6 @@
 # resilient-server [![Build Status](https://api.travis-ci.org/h2non/resilient-server.svg?branch=master)][travis] [![Dependency Status](https://gemnasium.com/h2non/resilient-server.svg)][gemnasium] [![NPM version](https://badge.fury.io/js/resilient-server.svg)][npm]
 
-Dummy HTTP server fully compatible with the [Resilient](http://resilient-http.github.io) [specfication](https://github.com/resilient-http/spec) discovery protocol.
+Dummy HTTP server fully compatible with the [Resilient](http://resilient-http.github.io) [specification](https://github.com/resilient-http/spec) discovery protocol.
 
 The stored servers are persisted as volatile data (in-memory). After a server restart is required data re-registering
 
