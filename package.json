@@ -33,6 +33,7 @@
   "dependencies": {
     "lodash": "^2.4.1",
     "restify": "^2.8.1",
+    "semver": "^4.1.0",
     "yargs": "^1.2.6"
   },
   "devDependencies": {
