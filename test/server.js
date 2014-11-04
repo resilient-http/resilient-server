@@ -37,6 +37,15 @@ describe('Server', function () {
     })
   })
 
+  it('should retrieve the server list', function (done) {
+    request.get('http://localhost:9898/all', function (err, res) {
+      expect(res.statusCode).to.be.equal(200)
+      expect(res.body[0].name).to.be.equal('app')
+      expect(res.body[0].versions[0].servers).to.be.deep.equal(['http://server.me'])
+      done()
+    })
+  })
+
   it('should remove a registered app', function (done) {
     request.del('http://localhost:9898/app', function (err, res) {
       expect(res.statusCode).to.be.equal(204)
@@ -46,4 +55,5 @@ describe('Server', function () {
       })
     })
   })
+
 })

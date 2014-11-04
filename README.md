@@ -59,6 +59,42 @@ Missing app name
 HTTP/1.1 404 Not Found
 ```
 
+#### GET /all
+
+Get the complete list of registered apps and servers URIs
+
+##### Request
+
+```
+curl -i http://localhost:8080/all
+```
+
+##### Response
+
+Valid response
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+Server: resilient-server 0.1.0
+
+[
+  {
+    "name": "app",
+    "updated": 1415144314038,
+    "servers": [
+      "http://api2.server.me",
+      "http://api2.server.me",
+      "http://api3.server.me"
+    ]
+  }
+]
+```
+
+Missing app name
+```
+HTTP/1.1 404 Not Found
+```
+
 #### POST|PUT /:appName
 
 Update the servers for the given application service, optionally specifiying the app semantic version
