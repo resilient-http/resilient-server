@@ -4,7 +4,7 @@ Dummy HTTP server fully compatible with the [Resilient](http://resilient-http.gi
 
 The stored servers are persisted as volatile data (in-memory). After a server restart is required data re-registering
 
-It was designed to be used for testing, demo and development proposals with resilient based applications.
+It was designed to be used for testing, demo and development proposals with resilient based applications
 
 Additionally it implements full CORS support for direct browser consumption
 
@@ -31,12 +31,12 @@ $ resilient-server --help
 
 #### GET /:appName
 
-Get a list of servers for the given application service
+Get a list of servers for the given application service, optionally specifiying the app semantic version
 
 ##### Request
 
 ```
-curl -i http://localhost:8080/my-app-api
+curl -i http://localhost:8080/my-app-api?version=1.0.0
 ```
 
 ##### Response
@@ -61,7 +61,7 @@ HTTP/1.1 404 Not Found
 
 #### POST|PUT /:appName
 
-Update the servers for the given application service
+Update the servers for the given application service, optionally specifiying the app semantic version
 
 **Note**: this service could require an API key token, if it's was defined via `--api-token` flag
 
@@ -70,6 +70,7 @@ Update the servers for the given application service
 ```
 curl -i -H "Accept: application/json" \
   -H "API-Token: awesome" \
+  -H "Version: 1.0.0" \
   -X POST -d '["http://newapi.server.com"]' \
   http://localhost:8080/my-app-api
 ```
@@ -88,13 +89,14 @@ HTTP/1.1 400 Bad Request
 
 #### DELETE /:appName
 
-Removes the servers of a given app from the registry
+Removes the servers of a given app from the registry, optionally specifiying the app semantic version
 
 ##### Request
 
 ```
 curl -i -H "Accept: application/json" \
   -H "API-Token: awesome" \
+  -H "Version: 1.0.0" \
   -X DELETE  \
   http://localhost:8080/my-app-api
 ```
