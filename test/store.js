@@ -56,4 +56,10 @@ describe('Store', function () {
     store.remove('sample', '1.5')
     expect(store.getServers('sample', '1.5')).to.be.undefined
   })
+
+  it('should remove all versions', function () {
+    store.remove('sample')
+    expect(store.getServers('sample', '1.0')).to.be.undefined
+    expect(store.getServers('sample')).to.be.undefined
+  })
 })
