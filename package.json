@@ -1,6 +1,6 @@
 {
   "name": "resilient-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Dummy HTTP server for register discovery services according to the Resilient discovery protocol",
   "license": "MIT",
   "preferGlobal": true,
@@ -28,7 +28,12 @@
     "balancer",
     "balance",
     "register",
-    "servers"
+    "servers",
+    "dummy",
+    "discovering",
+    "dynamic",
+    "app",
+    "uri"
   ],
   "dependencies": {
     "lodash": "^2.4.1",
