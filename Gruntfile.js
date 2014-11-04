@@ -5,13 +5,6 @@ module.exports = function (grunt) {
     clean: {
       archives: '*.nar'
     },
-    shell: {
-      cucumber: {
-        command:
-          './node_modules/.bin/cucumber-js  -f pretty ' +
-          '-r features/support -r features/step_definitions'
-      }
-    },
     mochacli: {
       options: {
         ui: 'bdd',

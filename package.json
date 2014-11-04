@@ -43,13 +43,11 @@
   },
   "devDependencies": {
     "chai": "^1.9.1",
-    "cucumber": "^0.4.1",
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-mocha-cli": "^1.10.0",
     "grunt-nar": "^0.4.0",
     "grunt-shell-spawn": "^0.3.0",
-    "grunt-stubby": "^0.1.4",
     "load-grunt-tasks": "^0.6.0",
     "mocha": "^1.20.1",
     "superagent": "^0.18.2"
