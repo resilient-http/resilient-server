@@ -80,12 +80,15 @@ Server: resilient-server 0.1.0
 [
   {
     "name": "app",
-    "updated": 1415144314038,
-    "servers": [
-      "http://api2.server.me",
-      "http://api2.server.me",
-      "http://api3.server.me"
-    ]
+    "versions": {
+      "version": "1.0.0",
+      "updated": 1415144314038,
+      "servers": [
+        "http://api2.server.me",
+        "http://api2.server.me",
+        "http://api3.server.me"
+      ]
+    }
   }
 ]
 ```
