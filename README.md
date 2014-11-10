@@ -21,11 +21,11 @@ Download the executable server as standalone binary for your target OS
 Then simply run it from your prefered shell
 
 ```bash
-$ chmod +x resilient-server-0.1.0-linux-x64.nar
+$ chmod +x resilient-server-0.1.1-linux-x64.nar
 ```
 
 ```bash
-$ ./resilient-server-0.1.0-linux-x64.nar
+$ ./resilient-server-0.1.1-linux-x64.nar
 ```
 
 ### Node.js
