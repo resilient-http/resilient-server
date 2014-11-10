@@ -10,6 +10,25 @@ Additionally it implements full CORS support for direct browser consumption
 
 ## Installation
 
+### Standalone
+
+Download the executable server as standalone binary for your target OS
+
+- **[Linux](http://dl.bintray.com/h2non/resilient/resilient-server-0.1.1-linux-x64.nar)** (x64)
+- **[OSX](http://dl.bintray.com/h2non/resilient/resilient-server-0.1.1-darwin-x64.nar)** (x64)
+
+Then simply run it from your preferred shell
+
+```bash
+$ chmod +x resilient-server-0.1.0-linux-x64.nar
+```
+
+```bash
+$ ./resilient-server-0.1.0-linux-x64.nar
+```
+
+### Node.js
+
 You must have [node.js](http://nodejs.org) already installed
 
 Install the package

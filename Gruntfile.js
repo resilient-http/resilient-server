@@ -14,12 +14,21 @@ module.exports = function (grunt) {
       all: ['test/**/*.js']
     },
     nar: {
-      options: {
-        executable: true,
-        arch: 'x64',
-        os: 'linux'
+      linux: {
+        options: {
+          executable: true,
+          arch: 'x64',
+          os: 'linux'
+        },
+        src: 'package.json',
+        dest: '.'
       },
-      create: {
+      osx: {
+        options: {
+          executable: true,
+          arch: 'x64',
+          os: 'darwin'
+        },
         src: 'package.json',
         dest: '.'
       }
