@@ -4,7 +4,8 @@ Dummy HTTP server fully compatible with the [Resilient](http://resilient-http.gi
 
 The stored servers are persisted as volatile data (in-memory). After a server restart is required data re-registering
 
-It was designed to be used for testing, demo and development proposals with resilient based applications
+It was designed to be used for testing, demo and development proposals with resilient based applications. 
+For production environments, see the [Hydra](http://innotech.github.io/hydra) project
 
 Additionally it implements full CORS support for direct browser consumption
 
@@ -17,7 +18,7 @@ Download the executable server as standalone binary for your target OS
 - **[Linux](http://dl.bintray.com/h2non/resilient/resilient-server-0.1.1-linux-x64.nar)** (x64)
 - **[OSX](http://dl.bintray.com/h2non/resilient/resilient-server-0.1.1-darwin-x64.nar)** (x64)
 
-Then simply run it from your preferred shell
+Then simply run it from your prefered shell
 
 ```bash
 $ chmod +x resilient-server-0.1.0-linux-x64.nar
