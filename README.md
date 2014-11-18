@@ -30,8 +30,6 @@ $ ./resilient-server-0.1.1-linux-x64.nar
 
 ### Node.js
 
-You must have [node.js](http://nodejs.org) already installed
-
 Install the package
 ```bash
 $ npm install -g resilient-server
