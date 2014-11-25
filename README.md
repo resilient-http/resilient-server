@@ -2,6 +2,7 @@
 
 Dummy HTTP server fully compatible with the [Resilient](http://resilient-http.github.io) [specification](https://github.com/resilient-http/spec) discovery protocol.
 
+It provides a simple CRUD-like HTTP API to publish and store service servers URLs, with multiple application version based on [semantic versioning](http://semver.org).
 The stored servers are persisted as volatile data (in-memory). After a server restart is required data re-registering
 
 It was designed to be used for testing, demo and development proposals with resilient based applications. 
@@ -29,8 +30,6 @@ $ ./resilient-server-0.1.1-linux-x64.nar
 ```
 
 ### Node.js
-
-You must have [node.js](http://nodejs.org) already installed
 
 Install the package
 ```bash
