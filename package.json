@@ -39,7 +39,7 @@
     "lodash": "^3.1.0",
     "restify": "^2.8.1",
     "semver": "^4.1.0",
-    "yargs": "^1.2.6"
+    "yargs": "^2.3.0"
   },
   "devDependencies": {
     "chai": "^1.9.1",
