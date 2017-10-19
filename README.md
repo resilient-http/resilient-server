@@ -6,7 +6,7 @@ It provides a simple CRUD-like HTTP API to publish and store service servers URL
 The stored servers are persisted as volatile data (in-memory). After a server restart is required data re-registering
 
 It was designed to be used for testing, demo and development proposals with resilient based applications. 
-For production environments, see the [Hydra](http://innotech.github.io/hydra) project
+For production environments, consider using [Consul](https://www.consul.io).
 
 Additionally it implements full CORS support for direct browser consumption
 
